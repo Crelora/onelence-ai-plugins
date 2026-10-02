@@ -7,6 +7,7 @@ This plugin brings OneLence into Claude (Claude Code and Cowork), Cursor and Cod
 - "What should I focus on today?"
 - "Why should we stop this partner?"
 - "How do ChatGPT, Claude and Perplexity see our site?" (Premium)
+- "Find new affiliate partners that fit us."
 - "How did last week compare with the week before?"
 - "Add OneLence tracking to this app and check that events arrive."
 
@@ -27,7 +28,7 @@ New to OneLence? Start a 7-day free trial at [onelence.com](https://onelence.com
 
 ## What the tools can do
 
-- **Read** your workspace: sites, briefing and priorities, Decisions, sources, signals, evidence gaps, performance and breakdowns, funnel, live visitors, conversions, events, affiliates, recorded changes, business and campaign context, tracking status and install instructions, AI visibility and SEO opportunities (on plans that include them), and plans.
+- **Read** your workspace: sites, briefing and priorities, Decisions, sources, signals, evidence gaps, performance and breakdowns, funnel, live visitors, conversions, events, affiliates and new partners that fit (from the OneLence partner catalog), recorded changes, business and campaign context, tracking status and install instructions, AI visibility, bot and AI crawler traffic and SEO opportunities (on plans that include them), and plans.
 - **Write safely** inside OneLence only:
   - record a change, give feedback on a Decision, update business or campaign context;
   - define, rename or delete conversion events, and register a site.
