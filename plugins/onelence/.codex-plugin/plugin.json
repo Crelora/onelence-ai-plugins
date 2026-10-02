@@ -1,7 +1,7 @@
 {
   "name": "onelence",
   "version": "1.0.0",
-  "description": "The growth operating system for small teams: ads, SEO, AI search and affiliate partners.",
+  "description": "Marketing and growth analytics for small teams: ads, SEO, AI search and affiliate partners.",
   "author": {
     "name": "Crelora",
     "url": "https://onelence.com"
@@ -11,19 +11,21 @@
   "license": "MIT",
   "keywords": [
     "onelence",
-    "attribution",
-    "analytics",
     "marketing",
+    "analytics",
+    "attribution",
+    "seo",
+    "affiliates",
     "tracking"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "OneLence",
-    "shortDescription": "Growth OS: ads, SEO, AI search",
-    "longDescription": "OneLence is the growth operating system for small teams. It watches your whole growth engine (website journeys and conversions, ad platforms, search, AI assistants and affiliate partners) and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.\n\nAsk for today's priorities, what to scale, hold or stop and why, how ChatGPT, Claude and Perplexity see your site (Premium), which search pages to improve first (Premium), which affiliates actually convert, find new partners that fit, see which bots and AI crawlers visit (Premium), or log a budget change and let OneLence watch what follows. In a codebase, the plugin installs OneLence tracking and verifies that events arrive.\n\nSafe by design: nothing changes without your confirmation, and OneLence never touches your ad accounts or moves money. New to OneLence? Start a 7-day free trial at onelence.com.",
+    "shortDescription": "Marketing and growth analytics",
+    "longDescription": "OneLence is a marketing analytics and growth workspace for small teams. It brings together your website journeys and conversions, ad platforms, search, AI search visibility and affiliate partners, and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.\n\nAsk for today's priorities and which channels and partners to scale, hold or stop, with the reasons and evidence behind each Decision. See how AI search engines read your site, which search pages to improve first, which affiliates actually convert and which new partners are worth a look. Compare periods, check which bots and crawlers visit, or log a budget change and let OneLence watch what follows. In a codebase, the plugin installs OneLence tracking and verifies that events arrive.\n\nNothing changes without your confirmation, and OneLence never touches your ad accounts or moves money. Requires a OneLence account.",
     "developerName": "Crelora",
-    "category": "Productivity",
+    "category": "Data & Analytics",
     "capabilities": [
       "Read",
       "Write"
@@ -34,7 +36,7 @@
     "supportURL": "https://onelence.com/contact",
     "defaultPrompt": [
       "What should I focus on today according to OneLence?",
-      "How do AI assistants like ChatGPT see our site?",
+      "How do AI search engines see our site?",
       "Add OneLence tracking to this project and check that events arrive."
     ],
     "logo": "./assets/logo.png"
