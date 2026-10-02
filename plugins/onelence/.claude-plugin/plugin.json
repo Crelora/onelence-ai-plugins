@@ -2,7 +2,7 @@
   "name": "onelence",
   "displayName": "OneLence",
   "version": "1.0.0",
-  "description": "Growth decisions and attribution from your OneLence workspace: what to scale, hold or stop, what changed, why confidence is limited, site performance, and tracking setup for coding agents.",
+  "description": "The growth operating system for small teams, inside Claude: ask what deserves attention across ads, SEO, AI search and affiliate partners, what to scale, hold or stop and why. Coding agents can install and verify OneLence tracking for you.",
   "author": {
     "name": "Crelora",
     "url": "https://onelence.com"
@@ -10,7 +10,15 @@
   "homepage": "https://onelence.com",
   "repository": "https://github.com/Crelora/onelence-ai-plugins",
   "license": "MIT",
-  "keywords": ["onelence", "attribution", "analytics", "marketing", "growth", "affiliates", "tracking"],
+  "keywords": [
+    "onelence",
+    "attribution",
+    "analytics",
+    "marketing",
+    "growth",
+    "affiliates",
+    "tracking"
+  ],
   "icon": "./assets/logo.png",
   "documentationUrl": "https://github.com/Crelora/onelence-ai-plugins/tree/main/plugins/onelence#readme",
   "supportUrl": "https://onelence.com/contact",
