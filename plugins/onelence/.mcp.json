@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "onelence": {
+      "type": "http",
+      "url": "https://mcp.onelence.com"
+    }
+  }
+}

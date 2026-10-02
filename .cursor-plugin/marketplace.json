@@ -1,0 +1,16 @@
+{
+  "name": "onelence",
+  "owner": {
+    "name": "Crelora"
+  },
+  "metadata": {
+    "description": "OneLence plugins for AI agents."
+  },
+  "plugins": [
+    {
+      "name": "onelence",
+      "source": "plugins/onelence",
+      "description": "Growth decisions, attribution and tracking setup from your OneLence workspace."
+    }
+  ]
+}

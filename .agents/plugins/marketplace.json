@@ -1,0 +1,20 @@
+{
+  "name": "onelence",
+  "interface": {
+    "displayName": "OneLence"
+  },
+  "plugins": [
+    {
+      "name": "onelence",
+      "source": {
+        "source": "local",
+        "path": "./plugins/onelence"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

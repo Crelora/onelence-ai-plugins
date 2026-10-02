@@ -1,0 +1,33 @@
+{
+  "name": "onelence",
+  "displayName": "OneLence",
+  "version": "1.0.0",
+  "description": "Growth decisions, attribution and tracking setup from your OneLence workspace.",
+  "author": {
+    "name": "Crelora"
+  },
+  "publisher": "Crelora",
+  "homepage": "https://onelence.com",
+  "repository": "https://github.com/Crelora/onelence-ai-plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "onelence",
+    "attribution",
+    "analytics",
+    "marketing",
+    "growth",
+    "affiliates",
+    "tracking",
+    "mcp"
+  ],
+  "category": "integrations",
+  "tags": [
+    "onelence",
+    "analytics",
+    "attribution",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

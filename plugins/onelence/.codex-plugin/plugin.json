@@ -1,0 +1,33 @@
+{
+  "name": "onelence",
+  "version": "1.0.0",
+  "description": "Growth decisions, attribution and tracking setup from your OneLence workspace.",
+  "author": {
+    "name": "Crelora",
+    "url": "https://onelence.com"
+  },
+  "homepage": "https://onelence.com",
+  "repository": "https://github.com/Crelora/onelence-ai-plugins",
+  "license": "MIT",
+  "keywords": ["onelence", "attribution", "analytics", "marketing", "tracking"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "OneLence",
+    "shortDescription": "Growth decisions, attribution",
+    "longDescription": "Bring your OneLence workspace into Codex. Ask what to scale, hold or stop on a site and why, what changed recently, and what limits confidence. Check performance by source, campaign or page, record changes the team made, and install or verify OneLence tracking in the codebase you are working on. Reads and safe workspace updates only: nothing is changed on ad platforms and nothing is charged.",
+    "developerName": "Crelora",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://onelence.com",
+    "privacyPolicyURL": "https://onelence.com/privacy-policy",
+    "termsOfServiceURL": "https://onelence.com/terms-of-service",
+    "supportURL": "https://onelence.com/contact",
+    "defaultPrompt": [
+      "What should I do today on my site according to OneLence?",
+      "Install OneLence tracking in this project and verify events arrive.",
+      "Which sources changed the most this week, and why is confidence limited?"
+    ],
+    "logo": "./assets/logo.png"
+  }
+}
