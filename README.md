@@ -1,6 +1,6 @@
 # OneLence AI plugins
 
-Plugins that connect AI agents to [OneLence](https://onelence.com), the growth and attribution workspace. Agents can read a workspace's Decisions (what to scale, hold or stop), signals, evidence gaps and performance. They can also record changes and install OneLence tracking in a codebase.
+Plugins that bring [OneLence](https://onelence.com) into AI agents. Ask which marketing channels, campaigns and affiliate partners to scale, hold or stop, with the reasons and evidence behind each call, even when attribution is incomplete. Coding agents can also install and verify OneLence tracking.
 
 | Plugin | Clients | What it adds |
 |---|---|---|

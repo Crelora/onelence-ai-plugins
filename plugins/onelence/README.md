@@ -1,8 +1,15 @@
 # OneLence plugin
 
-[OneLence](https://onelence.com) is a growth and attribution workspace. It tracks a website's visitors, sources and conversions, and turns them into Decisions: which traffic sources and affiliate partners to scale, hold or stop, with the reasons, the evidence behind them and what limits confidence.
+Make confident marketing decisions when the data is incomplete. [OneLence](https://onelence.com) reads your website's traffic, conversions and partner activity and tells you which channels, campaigns and affiliate partners to scale, hold or stop, with the reasons, the evidence behind each call and how far you can trust it.
 
-This plugin connects your AI agent to your OneLence workspace. It works in Claude (Claude Code and Cowork), Cursor and Codex.
+This plugin brings OneLence into Claude (Claude Code and Cowork), Cursor and Codex. Ask in plain language:
+
+- "What should I focus on today?"
+- "Why should we stop this partner?"
+- "How did last week compare with the week before?"
+- "Add OneLence tracking to this app and check that events arrive."
+
+New to OneLence? Start a 7-day free trial at [onelence.com](https://onelence.com), add your site, then connect.
 
 ## What's inside
 

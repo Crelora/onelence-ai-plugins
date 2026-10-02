@@ -2,7 +2,7 @@
   "name": "onelence",
   "displayName": "OneLence",
   "version": "1.0.0",
-  "description": "Growth decisions, attribution and tracking setup from your OneLence workspace.",
+  "description": "Install OneLence tracking in one prompt, verify events arrive, and ask which channels and partners to scale, hold or stop without leaving your editor.",
   "author": {
     "name": "Crelora"
   },
