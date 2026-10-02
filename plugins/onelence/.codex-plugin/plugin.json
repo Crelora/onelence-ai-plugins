@@ -1,7 +1,7 @@
 {
   "name": "onelence",
   "version": "1.0.0",
-  "description": "Know which channels and partners to scale, hold or stop, with the evidence.",
+  "description": "The growth operating system for small teams: ads, SEO, AI search and affiliate partners.",
   "author": {
     "name": "Crelora",
     "url": "https://onelence.com"
@@ -20,8 +20,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "OneLence",
-    "shortDescription": "What to scale, hold or stop",
-    "longDescription": "Make confident marketing decisions when the data is incomplete. OneLence reads your website's traffic, conversions and partner activity and tells you which channels, campaigns and affiliate partners to scale, hold or stop. Every call comes with its reasons, the evidence behind it and how far you can trust it, so you can act without waiting for perfect attribution.\n\nBuilt for small teams juggling paid, organic, creator, affiliate and referral sources without a data team. Ask for today's priorities, why a partner should stop, how this week compares with last, or log a budget change. In a codebase, the plugin installs OneLence tracking, sets up conversions and checks that events arrive.\n\nSafe by design: nothing changes without your confirmation, and OneLence never touches your ad accounts or moves money. New to OneLence? Start a 7-day free trial at onelence.com.",
+    "shortDescription": "Growth OS: ads, SEO, AI search",
+    "longDescription": "OneLence is the growth operating system for small teams. It watches your whole growth engine (website journeys and conversions, ad platforms, search, AI assistants and affiliate partners) and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.\n\nAsk for today's priorities, what to scale, hold or stop and why, how ChatGPT, Claude and Perplexity see your site (Premium), which search pages to improve first (Premium), which affiliates actually convert, or log a budget change and let OneLence watch what follows. In a codebase, the plugin installs OneLence tracking and verifies that events arrive.\n\nSafe by design: nothing changes without your confirmation, and OneLence never touches your ad accounts or moves money. New to OneLence? Start a 7-day free trial at onelence.com.",
     "developerName": "Crelora",
     "category": "Productivity",
     "capabilities": [
@@ -34,7 +34,7 @@
     "supportURL": "https://onelence.com/contact",
     "defaultPrompt": [
       "What should I focus on today according to OneLence?",
-      "Which channels and partners should I scale, hold or stop, and why?",
+      "How do AI assistants like ChatGPT see our site?",
       "Add OneLence tracking to this project and check that events arrive."
     ],
     "logo": "./assets/logo.png"

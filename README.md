@@ -1,6 +1,6 @@
 # OneLence AI plugins
 
-Plugins that bring [OneLence](https://onelence.com) into AI agents. Ask which marketing channels, campaigns and affiliate partners to scale, hold or stop, with the reasons and evidence behind each call, even when attribution is incomplete. Coding agents can also install and verify OneLence tracking.
+Plugins that bring [OneLence](https://onelence.com), the growth operating system for small teams, into AI agents. Ask what deserves attention across ads, SEO, AI search and affiliate partners, and what to scale, hold or stop with the evidence behind each call. Coding agents can also install and verify OneLence tracking.
 
 | Plugin | Clients | What it adds |
 |---|---|---|

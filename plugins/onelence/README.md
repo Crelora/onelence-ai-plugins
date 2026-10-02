@@ -1,11 +1,12 @@
 # OneLence plugin
 
-Make confident marketing decisions when the data is incomplete. [OneLence](https://onelence.com) reads your website's traffic, conversions and partner activity and tells you which channels, campaigns and affiliate partners to scale, hold or stop, with the reasons, the evidence behind each call and how far you can trust it.
+[OneLence](https://onelence.com) is the growth operating system for small teams. It watches your whole growth engine (website journeys and conversions, ad platforms, search, AI assistants and affiliate partners) and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.
 
 This plugin brings OneLence into Claude (Claude Code and Cowork), Cursor and Codex. Ask in plain language:
 
 - "What should I focus on today?"
 - "Why should we stop this partner?"
+- "How do ChatGPT, Claude and Perplexity see our site?" (Premium)
 - "How did last week compare with the week before?"
 - "Add OneLence tracking to this app and check that events arrive."
 
