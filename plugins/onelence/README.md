@@ -6,12 +6,12 @@ This plugin brings OneLence into Claude (Claude Code and Cowork), Cursor and Cod
 
 - "What should I focus on today?"
 - "Why should we stop this partner?"
-- "How do ChatGPT, Claude and Perplexity see our site?" (Premium)
+- "How do AI search engines see our site?"
 - "Find new affiliate partners that fit us."
 - "How did last week compare with the week before?"
 - "Add OneLence tracking to this app and check that events arrive."
 
-New to OneLence? Start a 7-day free trial at [onelence.com](https://onelence.com), add your site, then connect.
+New to OneLence? Create an account at [onelence.com](https://onelence.com), add your site, then connect.
 
 ## What's inside
 
