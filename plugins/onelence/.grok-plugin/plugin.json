@@ -1,0 +1,21 @@
+{
+  "name": "onelence",
+  "version": "1.0.0",
+  "description": "OneLence marketing analytics in Grok: install and verify OneLence tracking in your codebase, then ask what to scale, hold or stop across ads, search, AI search and affiliate partners, with the evidence behind each call. Sign in with a OneLence account on first connect.",
+  "author": {
+    "name": "Crelora",
+    "url": "https://onelence.com"
+  },
+  "homepage": "https://onelence.com",
+  "repository": "https://github.com/Crelora/onelence-ai-plugins",
+  "license": "MIT",
+  "keywords": [
+    "onelence",
+    "onelence mcp",
+    "onelence tracking",
+    "onelence analytics"
+  ],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
