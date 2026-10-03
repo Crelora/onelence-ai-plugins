@@ -35,9 +35,9 @@
     "termsOfServiceURL": "https://onelence.com/terms-of-service",
     "supportURL": "https://onelence.com/contact",
     "defaultPrompt": [
-      "What should I focus on today according to OneLence?",
-      "How do AI search engines see our site?",
-      "Add OneLence tracking to this project and check that events arrive."
+      "What should we scale, hold or stop this week, and why?",
+      "Which channels and affiliates actually drive our sales?",
+      "Set up OneLence tracking in this project and verify events arrive."
     ],
     "logo": "./assets/logo.png"
   }
