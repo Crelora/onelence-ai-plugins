@@ -52,6 +52,8 @@ New to OneLence? Create an account at [onelence.com](https://onelence.com), add 
 
 **Codex and ChatGPT**: install OneLence from the plugin directory (in Codex CLI: `codex /plugins`).
 
+**Grok Build**: install OneLence from the xAI plugin marketplace.
+
 **Clients that only start local servers** can use the CLI bridge pinned to a version, e.g. `npx -y onelence@0.1.1 mcp`. See the [onelence CLI](https://www.npmjs.com/package/onelence).
 
 ## Requirements
@@ -61,7 +63,7 @@ New to OneLence? Create an account at [onelence.com](https://onelence.com), add 
 
 ## Data and privacy
 
-The plugin runs no local code. Your agent sends tool calls (the arguments shown in each call, such as a site domain, a date window or the text of a change you record) to `https://mcp.onelence.com` over HTTPS with an OAuth token bound to that server. OneLence answers with data from the workspace you approved. You can revoke access at any time in OneLence → Settings → Connected apps.
+The plugin runs no local code. Your agent sends tool calls (the arguments shown in each call, such as a site domain, a date window or the text of a change you record) to `https://mcp.onelence.com` over HTTPS with an OAuth token bound to that server. Sign-in and token exchange happen at `https://api.onelence.com`; there are no other network endpoints and no credentials to configure. OneLence answers with data from the workspace you approved. You can revoke access at any time in OneLence → Settings → Connected apps.
 
 - Privacy policy: https://onelence.com/privacy-policy
 - Terms: https://onelence.com/terms-of-service
