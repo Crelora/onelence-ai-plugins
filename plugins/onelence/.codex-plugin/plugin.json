@@ -1,7 +1,7 @@
 {
   "name": "onelence",
-  "version": "1.0.0",
-  "description": "Marketing and growth analytics for small teams: ads, SEO, AI search and affiliate partners.",
+  "version": "1.0.1",
+  "description": "Marketing and growth analytics for ads, SEO, AI search and affiliate partners.",
   "author": {
     "name": "Crelora",
     "url": "https://onelence.com"
@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "OneLence",
     "shortDescription": "Marketing and growth analytics",
-    "longDescription": "OneLence is a marketing analytics and growth workspace for small teams. It brings together your website journeys and conversions, ad platforms, search, AI search visibility and affiliate partners, and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.\n\nAsk for today's priorities and which channels and partners to scale, hold or stop, with the reasons and evidence behind each Decision. See how AI search engines read your site, which search pages to improve first, which affiliates actually convert and which new partners are worth a look. Compare periods, check which bots and crawlers visit, or log a budget change and let OneLence watch what follows. In a codebase, the plugin installs OneLence tracking and verifies that events arrive.\n\nNothing changes without your confirmation, and OneLence never touches your ad accounts or moves money. Requires a OneLence account.",
+    "longDescription": "OneLence is a marketing analytics and growth workspace for founders and marketing teams. It brings together your website journeys and conversions, ad platforms, search, AI search visibility and affiliate partners, and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.\n\nAsk for today's priorities and which channels and partners to scale, hold or stop, with the reasons and evidence behind each Decision. See how AI search engines read your site, which search pages to improve first, which affiliates actually convert and which new partners are worth a look. Compare periods, check which bots and crawlers visit, or log a budget change and let OneLence watch what follows. In a codebase, the plugin installs OneLence tracking and verifies that events arrive.\n\nNothing changes without your confirmation, and OneLence never touches your ad accounts or moves money. Requires a OneLence account.",
     "developerName": "Crelora",
     "category": "Data & Analytics",
     "capabilities": [

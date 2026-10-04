@@ -1,8 +1,8 @@
 {
   "name": "onelence",
   "displayName": "OneLence",
-  "version": "1.0.0",
-  "description": "The growth operating system for small teams, inside Claude: ask what deserves attention across ads, SEO, AI search and affiliate partners, what to scale, hold or stop and why. Coding agents can install and verify OneLence tracking for you.",
+  "version": "1.0.1",
+  "description": "The growth operating system, inside Claude: ask what deserves attention across ads, SEO, AI search and affiliate partners, what to scale, hold or stop and why. Coding agents can install and verify OneLence tracking for you.",
   "author": {
     "name": "Crelora",
     "url": "https://onelence.com"
