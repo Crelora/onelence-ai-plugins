@@ -1,6 +1,6 @@
 # OneLence plugin
 
-[OneLence](https://onelence.com) is the growth operating system for small teams. It watches your whole growth engine (website journeys and conversions, ad platforms, search, AI assistants and affiliate partners) and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.
+[OneLence](https://onelence.com) is the growth operating system for founders and marketing teams. It watches your whole growth engine (website journeys and conversions, ad platforms, search, AI assistants and affiliate partners) and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.
 
 This plugin brings OneLence into Claude (Claude Code and Cowork), Cursor and Codex. Ask in plain language:
 
