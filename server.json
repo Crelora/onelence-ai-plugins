@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.onelence/onelence",
+  "title": "OneLence",
+  "description": "Growth analytics: what to scale, hold or stop across ads, SEO, AI search and affiliate partners.",
+  "version": "1.0.0",
+  "websiteUrl": "https://onelence.com",
+  "repository": {
+    "url": "https://github.com/Crelora/onelence-ai-plugins",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://onelence.com/dash/logo.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "256x256"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.onelence.com"
+    }
+  ]
+}
