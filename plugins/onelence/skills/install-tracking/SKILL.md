@@ -83,7 +83,7 @@ Rules for initialisation:
 - Keep `autocapture: { pageview: true }`. The SDK captures pageviews, visitor and session identity, and UTM and click-ID attribution. Don't rebuild those by hand.
 - Consent: if the project has a consent banner or consent tool, ask the user one question before you choose: should OneLence wait for visitors to accept? If yes, set `require_consent: true` and pass the visitor's choice to `Mark.setConsent('granted')` or `Mark.setConsent('denied')` from that tool's callback. If no, keep `require_consent: false` and leave the existing tool in charge. Never add a second consent system.
 - Existing analytics stays as it is. OneLence runs alongside it.
-- After the change, check in the test browser that a route change in the app produces a pageview. If it doesn't, ask the user before adding any custom pageview call.
+- `autocapture.pageview` also tracks SPA route changes (`pushState`, `replaceState`, `popstate`) by default. Check in the test browser that moving between two pages produces a pageview. Don't add custom pageview calls.
 
 ## 5. Track activation, activity and conversions
 
@@ -91,7 +91,7 @@ Rules for initialisation:
 
 **Activity** uses `Mark.track('Event Name', { ...properties })`. Track the activation and at most about five high-value actions. Names are human-readable, stable and in Title Case.
 
-**Conversions** use `Mark.conversion('Conversion Name', { value, currency, order_id })` and are only for confirmed outcomes. A checkout started is activity; a completed, paid order is a conversion.
+**Conversions** use `Mark.conversion('Conversion Name', { value, currency })` and are only for confirmed outcomes. A checkout started is activity; a completed, paid order is a conversion.
 
 - Choose where each conversion is sent:
   - **Server-side** when the backend confirms the outcome (payment, order, subscription, booking). This is the default for money.
@@ -100,16 +100,26 @@ Rules for initialisation:
 
 **Server-side conversion steps** (only when the backend confirms it):
 
-1. In the browser, when the purchase starts, read `Mark.getVisitorId()` and send it to the backend with the checkout request, so the backend can store it with the order. This is the attribution link to the original visit.
-2. Store the visitor id with the order, next to the user id.
-3. When the backend confirms the payment or order is final, send one request:
+1. In the browser, when the purchase starts, read `Mark.getVisitorId()` and send the value to the backend with the checkout request. Store it with the order, next to the user id. It links the backend conversion to the original visit.
+2. When the backend confirms that the payment or order is final, send one request:
    - `POST https://ingest.onelence.com/conversion`
    - header `x-secret-key: <value of the ONELENCE_SECRET_KEY environment variable>`, read on the server only. Never log it, return it or print it.
-   - JSON body: `site_id` (the `site.id` from step 1), `conversion_type` (for example `"purchase"`), `order_id` (the order's unique id), `value` (a number), `currency` (an ISO code such as `"EUR"`), `user_id` (the app's stable user id), and `visitor_id` when you stored it in step 2.
-4. OneLence dedupes conversions by `order_id`, so retries with the same `order_id` are safe. A 2xx response means accepted. Retry on 5xx responses and on 429, honouring `Retry-After`. Don't retry other 4xx responses; report them to the user.
-5. If the key isn't set, stop and ask the user to set `ONELENCE_SECRET_KEY` on the server. They create it in OneLence under Settings → API keys. Don't ask them to paste it into the chat.
+   - JSON body:
+     - `site_id`: the `site.id` from step 1.
+     - `idempotency_key`: a unique id for this conversion, such as the order id. It is required. Without it OneLence rejects the request with `422 conversion_identity_missing_stable_key`.
+     - `conversion_type`: for example `"purchase"` or `"subscription"`.
+     - `value`: a number. `currency`: an ISO code such as `"EUR"`.
+     - `user_id`: the app's stable user id.
+     - `visitor_id`: the value stored in step 1, when you have it.
+3. Read the response:
+   - `202`: accepted. The body contains `request_id`. Done.
+   - `401 invalid_api_key`, `403` (`api_key_inactive`, `api_key_expired`, `secret_key_not_allowed`, `conversion_identity_site_not_owned`, `conversion_identity_scope_mismatch`, `conversion_identity_untrusted_source`) and other `422` codes: don't retry. Report the `error.code` to the user and stop.
+   - `429 rate_limit_exceeded`: retry the same request after 60 seconds (`Retry-After: 60`).
+   - `408`, `503 conversion_queue_unavailable` and other `5xx`: retry with exponential backoff, up to a few attempts, then report.
+4. Every retry must reuse the same `idempotency_key`. OneLence enforces one conversion per identity with a unique database index, so a repeated key cannot count the conversion twice.
+5. If `ONELENCE_SECRET_KEY` isn't set, stop and ask the user to set it. They create it in OneLence under Settings → API keys. Never ask them to paste it into the chat.
 
-Without `visitor_id`, OneLence can still link the conversion by `user_id`, but attribution to the original visit is weaker. Say so in the report.
+Attribution without `visitor_id`: OneLence then finds the visit through the user profile. That link exists only if the browser called `Mark.identify(userId)` for the same user. If neither is available, say so in the report.
 
 **Event definitions:** every conversion name the code sends must be defined in OneLence. Compare the code's names with `conversion_events` from step 1. For each missing one, call `onelence_save_event_definition` with the display `name` and the exact `event_name` the code sends. It is a two-step write: show the summary, and apply it only after the user agrees.
 
