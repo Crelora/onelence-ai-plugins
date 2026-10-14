@@ -4,7 +4,7 @@ Plugins that bring [OneLence](https://onelence.com), the growth operating system
 
 | Plugin | Clients | What it adds |
 |---|---|---|
-| [`onelence`](plugins/onelence) | Claude Code and Cowork, Cursor, Codex | The OneLence remote MCP server (`https://mcp.onelence.com`, OAuth sign-in) and five skills: daily brief, weekly review, decision review, record a change, install tracking |
+| [`onelence`](plugins/onelence) | Claude Code and Cowork, Cursor, Codex | The OneLence remote MCP server (`https://mcp.onelence.com`, OAuth sign-in) and six skills: get started, daily brief, weekly review, decision review, record a change, install tracking |
 
 ## Install
 

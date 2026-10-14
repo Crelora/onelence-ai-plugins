@@ -40,5 +40,10 @@
       "Set up OneLence tracking in this project and verify events arrive."
     ],
     "logo": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/get-started/SKILL.md"
+    }
   }
 }
