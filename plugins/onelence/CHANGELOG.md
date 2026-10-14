@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- `get-started` skill: checks the workspace and site, gets tracking working (or hands over a filled-in snippet when there is no codebase), records the business basics and shows the first briefing.
+- ChatGPT and Codex run `get-started` right after install (`extensions["com.openai"].onboardingSkill`).
+
 ## 1.0.2
 
 - `install-tracking` contains its full install steps. It pins the SDK to `@crelora/mark` 0.5.0 and says which package it is about to install before it runs the package manager.

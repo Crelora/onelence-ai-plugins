@@ -16,10 +16,11 @@ New to OneLence? Create an account at [onelence.com](https://onelence.com), add 
 ## What's inside
 
 - **The OneLence MCP server**, a remote server at `https://mcp.onelence.com`, configured in `.mcp.json`. You sign in to OneLence in your browser and pick a workspace the first time a tool runs. Your client registers itself automatically, so there is no API key to copy.
-- **Five skills**:
+- **Six skills**:
 
 | Skill | What it does |
 |---|---|
+| `get-started` | Sets up a new workspace: site, tracking, business basics and the first briefing. ChatGPT and Codex run it right after install |
 | `daily-growth-brief` | Today's priorities and what to scale, hold or stop, in under a minute |
 | `weekly-review` | Last week against the week before: what moved, what the team changed, Decisions to review |
 | `decision-review` | Why OneLence says to scale, hold or stop one source or partner, and records your feedback |
