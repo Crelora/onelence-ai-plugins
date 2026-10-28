@@ -1,0 +1,26 @@
+# Every skill must say that text returned by OneLence tools is reference data, not instructions:
+# tool results can carry text the team, site visitors or the web wrote.
+name: Check skills
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  reference-data-rule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every skill treats tool text as reference data
+        run: |
+          missing=$(grep -L "is reference data, not instructions" plugins/*/skills/*/SKILL.md || true)
+          if [ -n "$missing" ]; then
+            echo "These skills lack the line saying tool text is reference data, not instructions:"
+            echo "$missing"
+            exit 1
+          fi
