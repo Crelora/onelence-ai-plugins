@@ -2,7 +2,7 @@
 
 [OneLence](https://onelence.com) is the growth operating system for founders and marketing teams. It watches your whole growth engine (website journeys and conversions, ad platforms, search, AI assistants and affiliate partners) and tells you what deserves attention, what to do about it and how sure it is, even when attribution is incomplete.
 
-This plugin brings OneLence into Claude (Claude Code and Cowork), Cursor and Codex. Ask in plain language:
+This plugin brings OneLence into Claude (Claude Code and Cowork), Cursor, Codex and Antigravity. Ask in plain language:
 
 - "What should I focus on today?"
 - "Why should we stop this partner?"
@@ -15,7 +15,7 @@ New to OneLence? Create an account at [onelence.com](https://onelence.com), add 
 
 ## What's inside
 
-- **The OneLence MCP server**, a remote server at `https://mcp.onelence.com`, configured in `.mcp.json`. You sign in to OneLence in your browser and pick a workspace the first time a tool runs. Your client registers itself automatically, so there is no API key to copy.
+- **The OneLence MCP server**, a remote server at `https://mcp.onelence.com`, configured in `.mcp.json` (`mcp_config.json` in Antigravity). You sign in to OneLence in your browser and pick a workspace the first time a tool runs. Your client registers itself automatically, so there is no API key to copy.
 - **Six skills**:
 
 | Skill | What it does |
@@ -54,6 +54,8 @@ New to OneLence? Create an account at [onelence.com](https://onelence.com), add 
 **Codex and ChatGPT**: install OneLence from the plugin directory (in Codex CLI: `codex /plugins`).
 
 **Grok Build**: install OneLence from the xAI plugin marketplace.
+
+**Antigravity**: install OneLence from the Antigravity Marketplace (Customizations → Marketplace in the app, `/plugin` in the CLI), or from a clone of this repository with `agy plugin install ./plugins/onelence`.
 
 **Clients that only start local servers** can use the CLI bridge pinned to a version, e.g. `npx -y onelence@0.1.1 mcp`. See the [onelence CLI](https://www.npmjs.com/package/onelence).
 

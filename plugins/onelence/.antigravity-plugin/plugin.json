@@ -1,0 +1,30 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "onelence",
+  "displayName": "OneLence",
+  "version": "1.0.3",
+  "description": "Marketing and growth analytics for ads, SEO, AI search and affiliate partners. Ask what to scale, hold or stop and why, or install and verify tracking.",
+  "logo": "assets/logo-antigravity.png",
+  "suggestedPrompts": [
+    "What should we scale, hold or stop this week, and why?",
+    "Which channels and affiliates actually drive our sales?",
+    "Set up OneLence tracking in this project and verify events arrive."
+  ],
+  "author": {
+    "name": "Crelora",
+    "url": "https://onelence.com"
+  },
+  "homepage": "https://onelence.com",
+  "repository": "https://github.com/Crelora/onelence-ai-plugins",
+  "license": "MIT",
+  "keywords": [
+    "onelence",
+    "marketing",
+    "analytics",
+    "attribution",
+    "seo",
+    "affiliates",
+    "tracking",
+    "growth"
+  ]
+}
