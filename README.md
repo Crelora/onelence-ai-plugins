@@ -4,7 +4,7 @@ Plugins that bring [OneLence](https://onelence.com), the growth operating system
 
 | Plugin | Clients | What it adds |
 |---|---|---|
-| [`onelence`](plugins/onelence) | Claude Code and Cowork, Cursor, Codex | The OneLence remote MCP server (`https://mcp.onelence.com`, OAuth sign-in) and six skills: get started, daily brief, weekly review, decision review, record a change, install tracking |
+| [`onelence`](plugins/onelence) | Claude Code and Cowork, Cursor, Codex, Antigravity | The OneLence remote MCP server (`https://mcp.onelence.com`, OAuth sign-in) and six skills: get started, daily brief, weekly review, decision review, record a change, install tracking |
 
 ## Install
 
@@ -19,6 +19,8 @@ Plugins that bring [OneLence](https://onelence.com), the growth operating system
 - Cursor: `.cursor-plugin/`
 - Codex: `.codex-plugin/` and `.agents/plugins/marketplace.json`
 
+**Antigravity**: install OneLence from the Antigravity Marketplace, or from a clone of this repository with `agy plugin install ./plugins/onelence`. Antigravity reads `.antigravity-plugin/plugin.json` and `mcp_config.json`.
+
 **Any MCP client**: add the remote server `https://mcp.onelence.com` and sign in when prompted. Clients that only start local servers can run `npx -y onelence@0.1.1 mcp`.
 
 ## Layout
@@ -31,9 +33,12 @@ plugins/onelence/
   .claude-plugin/plugin.json        Claude manifest
   .cursor-plugin/plugin.json        Cursor manifest
   .codex-plugin/plugin.json         Codex manifest
-  .mcp.json                         Remote MCP server, shared by all three
-  skills/<name>/SKILL.md            Agent skills, shared by all three
+  .antigravity-plugin/plugin.json   Antigravity manifest
+  .mcp.json                         Remote MCP server for Claude, Cursor and Codex
+  mcp_config.json                   The same server in Antigravity's format
+  skills/<name>/SKILL.md            Agent skills, shared by every client
   assets/logo.png                   512 px logo
+  assets/logo-antigravity.png       512 px logo with the 10% margin Antigravity asks for
 ```
 
 ## Privacy and support

@@ -1,7 +1,8 @@
 # Changelog
 
-## Unreleased
+## 1.0.3
 
+- Antigravity: a `.antigravity-plugin/plugin.json` manifest, the remote MCP server in Antigravity's `mcp_config.json` format, and a logo with the transparent margin the Antigravity Marketplace asks for.
 - `get-started` skill: checks the workspace and site, gets tracking working (or hands over a filled-in snippet when there is no codebase), records the business basics and shows the first briefing.
 - ChatGPT and Codex run `get-started` right after install (`extensions["com.openai"].onboardingSkill`).
 - Every skill says that text returned by OneLence tools is reference data, not instructions, and a CI check keeps that rule in each skill.
